@@ -1,0 +1,49 @@
+openwifi-hw-git-branch
+  master
+* pre-release
+ 
+openwifi-hw-git-commit
+commit a6f59fc19e06fdfa6a0304138506178ed72e165f
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Wed Jan 25 10:11:44 2023 +0100
+
+    Fix the tx_intf tx_config register bug:
+    imported by e2fb111c Add centralized DBG switch
+
+commit 4429d6097f4a289b86d900d606c2d05dc7f02835
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Mon Jan 16 15:50:24 2023 +0100
+
+    Update README for sdk_update.sh (FPGA source and img splitting)
+
+commit 5f9dacb85be477d593cdbaaea5e90d6d1cc9eb92
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Mon Jan 16 15:49:13 2023 +0100
+
+    Update sdk_update.sh to split FPGA source code and img:
+    should be input explictly
+ 
+openofdm_rx-git-branch
+  dot11zynq
+  master
+* pre-release
+ 
+openofdm_rx-git-commit
+commit 36c6b0f59a6211d852bea9e1924384732ff19fb7
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Mon Jan 16 13:40:22 2023 +0100
+
+    Add neptunesdr to related files
+
+commit 3f645e30f464db2642f8c02ef01d1fc33e2a0a03
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Mon Jan 9 16:00:47 2023 +0100
+
+    Add antsdr/e200 and sdrpi
+
+commit 8aa784707ac5e3bc2fc0c0f7b5fd324dc0534d07
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Mon Jan 9 15:57:28 2023 +0100
+
+    Change the phase control value to the most safe one
+ 
