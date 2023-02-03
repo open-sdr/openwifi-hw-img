@@ -3,25 +3,23 @@ openwifi-hw-git-branch
 * pre-release
  
 openwifi-hw-git-commit
-commit a6f59fc19e06fdfa6a0304138506178ed72e165f
+commit 16a69c3ef742c40904d47fd392adc70e598c4935
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Wed Jan 25 10:11:44 2023 +0100
+Date:   Fri Feb 3 16:10:48 2023 +0100
 
-    Fix the tx_intf tx_config register bug:
-    imported by e2fb111c Add centralized DBG switch
+    Update antsdr Vivado strategy 2018->2021
 
-commit 4429d6097f4a289b86d900d606c2d05dc7f02835
+commit b95aaf0dfda6de214251a65756bd78dcfdb278c4
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Jan 16 15:50:24 2023 +0100
+Date:   Mon Jan 30 09:51:33 2023 +0100
 
-    Update README for sdk_update.sh (FPGA source and img splitting)
+    Add antsdr_e200 and neptunesdr into README
 
-commit 5f9dacb85be477d593cdbaaea5e90d6d1cc9eb92
-Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Jan 16 15:49:13 2023 +0100
+commit af0bc1a17618b77cfe75c17c42432a6c0858743d
+Author: Xianjun Jiao <putaoshu@msn.com>
+Date:   Sat Jan 28 12:03:33 2023 +0100
 
-    Update sdk_update.sh to split FPGA source code and img:
-    should be input explictly
+    Track updated openofdm_rx
  
 openofdm_rx-git-branch
   dot11zynq
@@ -29,21 +27,22 @@ openofdm_rx-git-branch
 * pre-release
  
 openofdm_rx-git-commit
-commit 36c6b0f59a6211d852bea9e1924384732ff19fb7
+commit 747101dca8d00b4d0a99bd07dba647cd49948d04
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Jan 16 13:40:22 2023 +0100
+Date:   Fri Feb 3 15:44:42 2023 +0100
 
-    Add neptunesdr to related files
+    Update the testbench for signal_watchdog (with eq monitor)
 
-commit 3f645e30f464db2642f8c02ef01d1fc33e2a0a03
+commit 1e8ba3609b60340c1cf0a0c348f2b020ded20920
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Jan 9 16:00:47 2023 +0100
+Date:   Fri Feb 3 15:43:54 2023 +0100
 
-    Add antsdr/e200 and sdrpi
+    Connect signal_watchdog (with eq monitor) in openofdm_rx
 
-commit 8aa784707ac5e3bc2fc0c0f7b5fd324dc0534d07
+commit 564e8882c91a0fa632b641da592ae6b2a89c0e2a
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Jan 9 15:57:28 2023 +0100
+Date:   Fri Feb 3 15:40:36 2023 +0100
 
-    Change the phase control value to the most safe one
+    Add euqalizer monitor to signal_watchdog:
+    When the equalizer out is too small (48 out of 52/56, abs <= 2) for SIGNAL decoding, watchdog will reset the receiver
  
