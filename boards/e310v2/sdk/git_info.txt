@@ -1,0 +1,47 @@
+openwifi-hw-git-branch
+* antsdr
+  master
+ 
+openwifi-hw-git-commit
+commit da0afe5e9cd48d79cf728a71775e9ea562d14b9a
+Author: black_pigeon <1530604142@qq.com>
+Date:   Sat Oct 22 21:40:11 2022 +0800
+
+    Enable both the uart0 and uart1 controller, this will Make the compiled kernel work on antsdr_e200, without modifying the kernel config file
+
+commit 83f2599244bdac135c7d4d43f177961ea8e7fbc5
+Author: black-pigeon <1530604142@qq.com>
+Date:   Wed Oct 12 16:02:01 2022 +0800
+
+    fix Sentence error
+
+commit 3162ccf33e38863b8d1eeb558749558cb4af7523
+Author: black-pigeon <1530604142@qq.com>
+Date:   Wed Oct 12 10:39:30 2022 +0800
+
+    fix typo error
+ 
+openofdm_rx-git-branch
+* dot11zynq
+  master
+ 
+openofdm_rx-git-commit
+commit 747101dca8d00b4d0a99bd07dba647cd49948d04
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Fri Feb 3 15:44:42 2023 +0100
+
+    Update the testbench for signal_watchdog (with eq monitor)
+
+commit 1e8ba3609b60340c1cf0a0c348f2b020ded20920
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Fri Feb 3 15:43:54 2023 +0100
+
+    Connect signal_watchdog (with eq monitor) in openofdm_rx
+
+commit 564e8882c91a0fa632b641da592ae6b2a89c0e2a
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Fri Feb 3 15:40:36 2023 +0100
+
+    Add euqalizer monitor to signal_watchdog:
+    When the equalizer out is too small (48 out of 52/56, abs <= 2) for SIGNAL decoding, watchdog will reset the receiver
+ 
