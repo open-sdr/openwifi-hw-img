@@ -1,7 +1,20 @@
 openwifi-hw-git-branch
-* master
+  master
+* neptunesdr_new
  
 openwifi-hw-git-commit
+commit 15731647be6f09e190faf922785641ffaa47af2b
+Author: Xianjun Jiao <putaoshu@msn.com>
+Date:   Tue Aug 1 16:26:12 2023 +0800
+
+    update xdc for new version neptunesdr
+
+commit b082aa0a67a40658a27148099ac50e6f436a883f
+Author: Xianjun Jiao <putaoshu@msn.com>
+Date:   Tue Aug 1 16:25:37 2023 +0800
+
+    Remove useless line in neptunesdr openwifi.tcl
+
 commit 573c8cba8c0051e2bcfeba478f77f194b0038daf
 Author: Jiao Xianjun <xianjun.jiao@ugent.be>
 Date:   Mon May 8 16:15:35 2023 +0200
@@ -13,21 +26,6 @@ Date:   Mon May 8 16:15:35 2023 +0200
     ---------
     
     Co-authored-by: Wei Chaochen <1530604142@qq.com>
-
-commit 9acf158118893cebebe6054f52d7aaef2e0e90c3
-Author: Olalekan Afuye <lekez2005@users.noreply.github.com>
-Date:   Mon May 1 02:29:12 2023 -0400
-
-    Remove blank first line to enable she-bang directive
-
-commit e0972111a7ba3a6766ee069bd0f32e49cf77ce41
-Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Feb 27 17:38:05 2023 +0100
-
-    Improve the EIFS related settings in xpu:
-        1. eifs_trigger_by_last_rx_fail by default enabled by value 0 of slv_reg6[27]
-        2. eifs_trigger_by_last_tx_fail by default enabled by value 0 of slv_reg6[26]
-        3. EIFS trigger condition according to: 802.11-2020: p1682: the PPDU that causes the EIFS contains a single MPDU with a length equal to 14 or 32 octets, EIFS is equal to DIFS
  
 openofdm_rx-git-branch
 * dot11zynq
