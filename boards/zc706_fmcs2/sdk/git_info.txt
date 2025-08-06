@@ -1,52 +1,50 @@
 openwifi-hw-git-branch
-* master
-  pre-release
+  master
+* nlnet_fpga_2025
  
 openwifi-hw-git-commit
-commit e0972111a7ba3a6766ee069bd0f32e49cf77ce41
+commit a51dcd1d1400cfdf021c400d28fca9acda8b58d2
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Feb 27 17:38:05 2023 +0100
+Date:   Thu Apr 17 14:27:40 2025 +0200
 
-    Improve the EIFS related settings in xpu:
-        1. eifs_trigger_by_last_rx_fail by default enabled by value 0 of slv_reg6[27]
-        2. eifs_trigger_by_last_tx_fail by default enabled by value 0 of slv_reg6[26]
-        3. EIFS trigger condition according to: 802.11-2020: p1682: the PPDU that causes the EIFS contains a single MPDU with a length equal to 14 or 32 octets, EIFS is equal to DIFS
+    Connect freq offset (phase_offset FPGA) to rx_intf:
+    sdrpi
 
-commit 0b0f225139d91403b4a48f74cf241d6bf0d0072e
+commit bd971a8175af93935ff11ce405aef74df9039cc2
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Mon Feb 27 17:37:10 2023 +0100
+Date:   Thu Apr 17 14:23:17 2025 +0200
 
-    disable eifs does not mean eifs=0:
-    means eifs=difs
+    Connect freq offset (phase_offset FPGA) to rx_intf:
+    neptunesdr
 
-commit 691e9d86b788747ed3de74cb2c8793f94b5fff62
-Author: Xianjun Jiao <putaoshu@msn.com>
-Date:   Sat Feb 4 16:48:47 2023 +0100
+commit 34f235f8bbfa6c5924c3f91e9afd137cab3117fd
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Thu Apr 17 14:19:56 2025 +0200
 
-    Track the matched openofdm_rx
+    Connect freq offset (phase_offset FPGA) to rx_intf:
+    e310v2
  
 openofdm_rx-git-branch
-* dot11zynq
+  dot11zynq
+* dot11zynq_nlnet_fpga_2025
   master
-  pre-release
  
 openofdm_rx-git-commit
-commit 747101dca8d00b4d0a99bd07dba647cd49948d04
+commit 2bb3ad1a1f0023bfd15168db4e196ebf0d56d76c
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Fri Feb 3 15:44:42 2023 +0100
+Date:   Fri Mar 14 10:18:59 2025 +0100
 
-    Update the testbench for signal_watchdog (with eq monitor)
+    re-format openofdm_rx_s_axi.v
 
-commit 1e8ba3609b60340c1cf0a0c348f2b020ded20920
+commit c371ce95c045fc1824ae8c5aead9fc8aa44ab523
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Fri Feb 3 15:43:54 2023 +0100
+Date:   Fri Mar 7 17:28:57 2025 +0100
 
-    Connect signal_watchdog (with eq monitor) in openofdm_rx
+    re-format openofdm_rx_s_axi.v
 
-commit 564e8882c91a0fa632b641da592ae6b2a89c0e2a
+commit e40d79f1ac32079a13d2931a1512b3526e6e0b48
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Fri Feb 3 15:40:36 2023 +0100
+Date:   Thu Mar 6 16:39:52 2025 +0100
 
-    Add euqalizer monitor to signal_watchdog:
-    When the equalizer out is too small (48 out of 52/56, abs <= 2) for SIGNAL decoding, watchdog will reset the receiver
+    Add missing lines
  

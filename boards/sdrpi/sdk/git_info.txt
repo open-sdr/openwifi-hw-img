@@ -1,48 +1,51 @@
 openwifi-hw-git-branch
-  ext_stf_ltf_sync
-  ext_stf_ltf_sync-new-dac-intf
-* master
+  master
+* nlnet_fpga_2025
  
 openwifi-hw-git-commit
-commit 900aa8f4c330d047660e10ac871fff922f44aa98
+commit b6a32312dc4de5f8531996beb1a0eec08f472d05
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Fri Nov 17 17:02:04 2023 +0100
+Date:   Wed Jul 9 15:28:25 2025 +0200
 
-    track openofdm_rx
+    Change new to append mode for _pre_def.v:
+    to avoid overwrite previous defines
 
-commit 41e691241627b0e7df43a87be030a9f550090321
+commit a51dcd1d1400cfdf021c400d28fca9acda8b58d2
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Fri Nov 17 16:59:50 2023 +0100
+Date:   Thu Apr 17 14:27:40 2025 +0200
 
-    Add direct beamforming next to simple cdd by slv_reg16[5]
+    Connect freq offset (phase_offset FPGA) to rx_intf:
+    sdrpi
 
-commit 14b1e840591f470ee945844cd3bb51a95d7da09f
-Author: Jiao Xianjun <xianjun.jiao@ugent.be>
-Date:   Sat Sep 16 21:46:11 2023 +0200
+commit bd971a8175af93935ff11ce405aef74df9039cc2
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Thu Apr 17 14:23:17 2025 +0200
 
-    Add Tips for Windows users
+    Connect freq offset (phase_offset FPGA) to rx_intf:
+    neptunesdr
  
 openofdm_rx-git-branch
 * dot11zynq
-  ext_stf_ltf_sync
   master
  
 openofdm_rx-git-commit
-commit 39cec9f3ecf3d67069461a3e2bb85d5594712d05
-Author: Wei Chaochen <1530604142@qq.com>
-Date:   Tue Apr 11 20:01:26 2023 +0800
-
-    parse borad for e310v2
-
-commit 747101dca8d00b4d0a99bd07dba647cd49948d04
+commit b91aaccc9bd6b6c82316bfc409a53f3020fede72
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Fri Feb 3 15:44:42 2023 +0100
+Date:   Fri Jul 11 10:16:43 2025 +0200
 
-    Update the testbench for signal_watchdog (with eq monitor)
+    adapt state history due to 1 more bit:
+    in state
 
-commit 1e8ba3609b60340c1cf0a0c348f2b020ded20920
+commit 13466592444a5a3aea064b10a1cbbb2e44c8049f
 Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Fri Feb 3 15:43:54 2023 +0100
+Date:   Wed Jul 9 15:31:42 2025 +0200
 
-    Connect signal_watchdog (with eq monitor) in openofdm_rx
+    Add DEBUG flag to watchdog events
+
+commit 44f88d0248e55e56421a0b535e6f714e27776b83
+Author: Xianjun Jiao <xianjun.jiao@ugent.be>
+Date:   Wed Jul 9 15:30:01 2025 +0200
+
+    Change new to append mode for _pre_def.v:
+    to avoid overwrite previous defines
  
