@@ -1,37 +1,21 @@
 openwifi-hw-git-branch
-* master
- 
+  add-plutosky-r2-board
+
 openwifi-hw-git-commit
-commit d047d794195beb72e12d2a9a6c205c16399cf288
-Author: Jiao Xianjun <xianjun.jiao@ugent.be>
-Date:   Tue Sep 23 08:57:55 2025 +0200
+commit ca50ac833184f37307a96994e46333c60615de86
+Author: snow <16166717+fuwenbo95@user.noreply.gitee.com>
+Date:   Thu Oct 8 13:29:12 2026 +0800
 
-    Put all board links in the README
+    fit vivado 2022.2
 
-commit 474bf3b10b2b487fd39ff0dcc5fe2b2376fe9e71
-Merge: 4c28012 b6a3231
-Author: Jiao Xianjun <xianjun.jiao@ugent.be>
-Date:   Tue Aug 5 13:12:24 2025 +0200
+build-tool
+  Vivado v2022.2
 
-    Merge pull request #127 from open-sdr/nlnet_fpga_2025
-    
-    Big improvement for nlnet project: https://nlnet.nl/project/OpenWifi-maturity/
+axi_iic-vlnv
+  xilinx.com:ip:axi_iic:2.1
 
-commit b6a32312dc4de5f8531996beb1a0eec08f472d05
-Author: Xianjun Jiao <xianjun.jiao@ugent.be>
-Date:   Wed Jul 9 15:28:25 2025 +0200
+adi-hdl-git-commit
+  7ea497b6c24172ee293d6e0a9a387a16973da5ce (2022_R2)
 
-    Change new to append mode for _pre_def.v:
-    to avoid overwrite previous defines
- 
-openofdm_rx-git-branch
-* dot11zynq
- 
 openofdm_rx-git-commit
-commit 2f0e0ba95385affa426dc11eba6effab37b8778b
-  (submodule pointer recorded in openwifi-hw at d047d79)
- 
-NOTE
-  Regenerate this file after committing the board to openwifi-hw, so that
-  openwifi-hw-git-commit names the commit this system_top.xsa was built from.
- 
+  b2a4833e133642cd4e0669349b837748d2c0d8ca (PlutoSky R2 support)
