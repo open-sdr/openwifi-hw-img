@@ -1,0 +1,21 @@
+openwifi-hw-git-branch
+  add-plutosky-r2-board
+
+openwifi-hw-git-commit
+commit ca50ac833184f37307a96994e46333c60615de86
+Author: snow <16166717+fuwenbo95@user.noreply.gitee.com>
+Date:   Thu Oct 8 13:29:12 2026 +0800
+
+    fit vivado 2022.2
+
+build-tool
+  Vivado v2022.2
+
+axi_iic-vlnv
+  xilinx.com:ip:axi_iic:2.1
+
+adi-hdl-git-commit
+  7ea497b6c24172ee293d6e0a9a387a16973da5ce (2022_R2)
+
+openofdm_rx-git-commit
+  b2a4833e133642cd4e0669349b837748d2c0d8ca (PlutoSky R2 support)
